@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webspark</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/jquery-ui.structure.css">
+    <link rel="stylesheet" href="style/jquery-ui.css">
+    <link rel="stylesheet" href="style/jquery-ui.theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Aleo:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/app.css">
+</head>
+
+<body>
+    <header class="ba-header">
+        <div class="container ba-header__container">
+            <h1 class="ba-header__logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="logo" class="ba-header__logo__img">
+                </a>
+            </h1>
+            <div class="ba-header__menu">
+                <div class="ba-header__info">
+                    <h2 class="ba-header__title">monblanproject</h2>
+                    <span class="ba-header__date">Start on 17-02-2016</span>
+                </div>
+                <ul class="ba-header__list">
+                    <li class="ba-header__list-item">
+                        <span class="ba-header__list-item__qty">870</span>
+                        <span class="ba-header__list-item__title">posts</span>
+                    </li>
+                    <li class="ba-header__list-item">
+                        <span class="ba-header__list-item__qty">11,787</span>
+                        <span class="ba-header__list-item__title">followers</span>
+                    </li>
+                    <li class="ba-header__list-item">
+                        <span class="ba-header__list-item__qty">112</span>
+                        <span class="ba-header__list-item__title">following</span>
+                    </li>
+                </ul>
+                <div class="ba-header__calendar">
+                    <span class="datepicker__title">Date</span>
+                    <input type="text" class="datepicker " placeholder="from" required>
+                    <input type="text" class="datepicker " placeholder="to" required>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="ba-main">
+        <section class="ba-section">
+            <div class="container">
+                <div class="ba-main__content row">
+                    <div class="col-4 ba-main__card">
+                        <div class="ba-main__image">
+                            <img src="images/image1.png" alt="image" class="ba-main__img">
+                        </div>
+                        <div class="ba-main__item-hover">
+                            <div class="ba-main__info__today">
+                                <span class="col-6 noPadding">Today</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">128</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">31</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__info__on-date">
+                                <span class="col-6 noPadding">9-08-2016</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">67</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">22</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__upload">
+                                <span class="">Image upload:</span>
+                                <span class="">11-04-2016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 ba-main__card">
+                        <div class="ba-main__image">
+                            <img src="images/image2.png" alt="image" class="ba-main__img">
+                        </div>
+                        <div class="ba-main__item-hover">
+                            <div class="ba-main__info__today">
+                                <span class="col-6 noPadding">Today</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">128</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">31</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__info__on-date">
+                                <span class="col-6 noPadding">9-08-2016</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">67</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">22</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__upload">
+                                <span class="">Image upload:</span>
+                                <span class="">11-04-2016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 ba-main__card">
+                        <div class="ba-main__image">
+                            <img src="images/image3.png" alt="image" class="ba-main__img">
+                        </div>
+                        <div class="ba-main__item-hover">
+                            <div class="ba-main__info__today">
+                                <span class="col-6 noPadding">Today</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">128</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">31</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__info__on-date">
+                                <span class="col-6 noPadding">9-08-2016</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">67</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">22</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__upload">
+                                <span class="">Image upload:</span>
+                                <span class="">11-04-2016</span>
+                            </div>
+                        </div>
+                        <img src="images/video.png" alt="video" class="ba-main__video">
+                    </div>
+                    <div class="col-4 ba-main__card">
+                        <div class="ba-main__image">
+                            <img src="images/image4.png" alt="image" class="ba-main__img">
+                        </div>
+                        <div class="ba-main__item-hover">
+                            <div class="ba-main__info__today">
+                                <span class="col-6 noPadding">Today</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">128</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">31</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__info__on-date">
+                                <span class="col-6 noPadding">9-08-2016</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">67</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">22</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__upload">
+                                <span class="">Image upload:</span>
+                                <span class="">11-04-2016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 ba-main__card">
+                        <div class="ba-main__image">
+                            <img src="images/image5.png" alt="image" class="ba-main__img">
+                        </div>
+                        <div class="ba-main__item-hover">
+                            <div class="ba-main__info__today">
+                                <span class="col-6 noPadding">Today</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">128</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">31</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__info__on-date">
+                                <span class="col-6 noPadding">9-08-2016</span>
+
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">67</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">22</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__upload">
+                                <span class="">Image upload:</span>
+                                <span class="">11-04-2016</span>
+                            </div>
+                        </div>
+                        <img src="images/video.png" alt="video" class="ba-main__video">
+                    </div>
+                    <div class="col-4 ba-main__card">
+                        <div class="ba-main__image">
+                            <img src="images/image6.png" alt="image" class="ba-main__img">
+                        </div>
+                        <div class="ba-main__item-hover">
+                            <div class="ba-main__info__today">
+                                <span class="col-6 noPadding">Today</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">128</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">31</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__info__on-date">
+                                <span class="col-6 noPadding">9-08-2016</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">67</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">22</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__upload">
+                                <span class="">Image upload:</span>
+                                <span class="">11-04-2016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 ba-main__card">
+                        <div class="ba-main__image">
+                            <img src="images/image7.png" alt="image" class="ba-main__img">
+                        </div>
+                        <div class="ba-main__item-hover">
+                            <div class="ba-main__info__today">
+                                <span class="col-6 noPadding">Today</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">128</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">31</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__info__on-date">
+                                <span class="col-6 noPadding">9-08-2016</span>
+
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">67</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">22</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__upload">
+                                <span class="">Image upload:</span>
+                                <span class="">11-04-2016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 ba-main__card">
+                        <div class="ba-main__image">
+                            <img src="images/image8.png" alt="image" class="ba-main__img">
+                        </div>
+                        <div class="ba-main__item-hover">
+                            <div class="ba-main__info__today">
+                                <span class="col-6 noPadding">Today</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">128</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">31</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__info__on-date">
+                                <span class="col-6 noPadding">9-08-2016</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">67</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">22</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__upload">
+                                <span class="">Image upload:</span>
+                                <span class="">11-04-2016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 ba-main__card">
+                        <div class="ba-main__image">
+                            <img src="images/image9.png" alt="image" class="ba-main__img">
+                        </div>
+                        <div class="ba-main__item-hover">
+                            <div class="ba-main__info__today">
+                                <span class="col-6 noPadding">Today</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">128</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">31</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__info__on-date">
+                                <span class="col-6 noPadding">9-08-2016</span>
+                                <div class="col-4 noPadding ba-main__item-rating">
+                                    <img src="images/heart.png" alt="like" class="ba-main__icon">
+                                    <span class="ba-main__qty">67</span>
+                                </div>
+                                <div class="col-4 ba-main__item-rating">
+                                    <img src="images/comment.png" alt="comment" class="ba-main__icon">
+                                    <span class="ba-main__qty">22</span>
+                                </div>
+                            </div>
+                            <div class="ba-main__upload">
+                                <span class="ba-main__upload-title">Image upload:</span>
+                                <span class="ba-main__upload-date">11-04-2016</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ba-load">
+                    <button class="ba-button">Load more</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
