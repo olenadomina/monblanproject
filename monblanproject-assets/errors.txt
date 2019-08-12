@@ -1,0 +1,1 @@
+[2019-08-12 19:23:26] layer "close.png": Duplicate path: close.png

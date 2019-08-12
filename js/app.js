@@ -1,12 +1,15 @@
 $(function(){
     $(".datepicker").datepicker({
         dateFormat: 'dd.mm.yy', 
-        showButtonPanel: true,
-        // showOn: "button",
-        //  buttonImage: "images/calendar.png",
-        // buttonImageOnly: true,
-        // buttonText: "Select date",
-        
+        showButtonPanel: true,         
     });
   
+    $('.datepicker__clean').on('click', function(){
+        console.log(this);
+        let input = $(this).closest('.datepicker__item-wrapper').find('input');
+        if (input.val() != ''){
+            input.val('');
+        }
+
+    });
 });

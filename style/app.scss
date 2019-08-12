@@ -1,5 +1,4 @@
 // variables
-
 $container: 936px;
 $colGups: 15px;
 
@@ -129,6 +128,12 @@ button,
     font-weight: bolder;
     margin-right: 5px;
   }
+
+  &__calendar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 //main
@@ -158,9 +163,9 @@ button,
     background-color: #0000009c;
     position: absolute;
     top: 0;
-    left: 15px;   
+    left: 15px;
     width: calc(100% - 30px);
-    height: calc(100% - 5px);    
+    height: calc(100% - 5px);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -196,22 +201,56 @@ button,
     text-align: center;
     padding-top: 5px;
   }
-  &__item-rating{
+  &__item-rating {
     display: flex;
     align-items: center;
-
   }
 }
 
 .datepicker {
   font-size: 14px;
-  padding: 10px;
+  padding: 7px 10px;
   border: 1px solid #cccccc;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 5px;
 
   &__title {
-    font-size: 17px;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+
+  &__item-wrapper {
+    position: relative;
+  }
+
+  &__item-wrapper + &__item-wrapper {
+    margin-left: 10px;
+  }
+  &__clean {
+    position: absolute;
+    top: 0;
+    right: 31px;
+    width: 31px;
+    height: 100%;
+    background-color: #ebebeb;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__show {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 31px;
+    height: 100%;
+    background-color: #ebebeb;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    pointer-events: none;
   }
 }
 
@@ -298,9 +337,21 @@ button,
   }
   .datepicker {
     font-size: 10px;
-    padding: 2px;
+    padding: 2px;    
+    height: 100%;
+    display: block;
     &__title {
-      font-size: 10px;
+      font-size: 10px;  
+    }
+    &__clean img {       
+      right: 5px;
+      width: 5px;
+      
+     
+    }
+    &__show img{
+       width: 5px; 
+          
     }
   }
   .ba-main {
@@ -315,28 +366,29 @@ button,
 
     &__info__on-date {
       padding-bottom: 5px;
-      & .col-6{
+      & .col-6 {
         width: 45%;
       }
     }
     &__info__today {
       padding-bottom: 5px;
-      & .col-6{
+      & .col-6 {
         width: 45%;
       }
     }
-    &__upload {   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;    
+    &__upload {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     &__video {
       width: 18px;
       height: 12px;
-     
     }
   }
+
+
 }
 
 @media (max-width: 485px) {
@@ -356,9 +408,9 @@ button,
     padding: 5px 10px;
   }
 
-  .ba-main{
-     &__item-hover {
-      font-size: 7px;      
+  .ba-main {
+    &__item-hover {
+      font-size: 7px;
     }
 
     &__icon {
@@ -388,9 +440,7 @@ button,
       top: 0;
       left: 5px;
       width: calc(100% - 10px);
-         
     }
-
   }
 }
 
@@ -406,7 +456,22 @@ button,
   }
   .datepicker {
     max-width: 80px;
+  
+    &__title {
+      font-size: 8px;  
+    }
+    &__clean  {       
+      right: 15px;
+      width: 15px;
+      
+     
+    }
+    &__show {
+       width: 15px; 
+          
+    }
   }
+
 }
 @media (max-width: 333px) {
   .ba-header {

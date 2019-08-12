@@ -141,6 +141,17 @@ button,
   font-weight: bolder;
   margin-right: 5px; }
 
+.ba-header__calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .ba-section {
   padding: 70px 0 75px 0; }
 
@@ -219,12 +230,53 @@ button,
 
 .datepicker {
   font-size: 14px;
-  padding: 10px;
+  padding: 7px 10px;
   border: 1px solid #cccccc;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px; }
+  border-radius: 5px; }
   .datepicker__title {
-    font-size: 17px; }
+    font-size: 15px;
+    margin-right: 5px; }
+  .datepicker__item-wrapper {
+    position: relative; }
+  .datepicker__item-wrapper + .datepicker__item-wrapper {
+    margin-left: 10px; }
+  .datepicker__clean {
+    position: absolute;
+    top: 0;
+    right: 31px;
+    width: 31px;
+    height: 100%;
+    background-color: #ebebeb;
+    border: 1px solid #cccccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .datepicker__show {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 31px;
+    height: 100%;
+    background-color: #ebebeb;
+    border: 1px solid #cccccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    pointer-events: none; }
 
 .ba-load {
   text-align: center; }
@@ -279,9 +331,16 @@ button,
     font-size: 12px; }
   .datepicker {
     font-size: 10px;
-    padding: 2px; }
+    padding: 2px;
+    height: 100%;
+    display: block; }
     .datepicker__title {
       font-size: 10px; }
+    .datepicker__clean img {
+      right: 5px;
+      width: 5px; }
+    .datepicker__show img {
+      width: 5px; }
   .ba-main__item-hover {
     font-size: 9px;
     padding: 5px; }
@@ -350,7 +409,14 @@ button,
   .ba-header__list {
     font-size: 8px; }
   .datepicker {
-    max-width: 80px; } }
+    max-width: 80px; }
+    .datepicker__title {
+      font-size: 8px; }
+    .datepicker__clean {
+      right: 15px;
+      width: 15px; }
+    .datepicker__show {
+      width: 15px; } }
 
 @media (max-width: 333px) {
   .ba-header__date {
